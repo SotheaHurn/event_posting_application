@@ -1,0 +1,52 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "EventConsole/1.0.0": {
+        "dependencies": {
+          "EventLib": "1.0.0",
+          "RestClientLib": "1.0.2"
+        },
+        "runtime": {
+          "EventConsole.dll": {}
+        }
+      },
+      "RestClientLib/1.0.2": {
+        "runtime": {
+          "lib/net6.0/RestClientLib.dll": {
+            "assemblyVersion": "1.0.2.0",
+            "fileVersion": "1.0.2.0"
+          }
+        }
+      },
+      "EventLib/1.0.0": {
+        "runtime": {
+          "EventLib.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "EventConsole/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "RestClientLib/1.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-PpSXiotEdcOs+RFNRqWyg02sj1hXqHxG6RuvY7Ks11XG4EZm/pSHmipvaTMLlJDhDpDaIU8Yw8eMgzlsfuLAbA==",
+      "path": "restclientlib/1.0.2",
+      "hashPath": "restclientlib.1.0.2.nupkg.sha512"
+    },
+    "EventLib/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
