@@ -37,6 +37,19 @@ namespace EventLib.Repo
                 throw new InvalidOperationException(ex.Message);
             }
         }
+        public User? UpdateProfile(User newUser)
+        {
+            try
+            {
+                var user = _context.User.Update(newUser);
+                _context.SaveChanges();
+                return user.Entity;
+            }
+            catch (Exception ex)
+            {
+                throw new InvalidOperationException(ex.Message);
+            }
+        }
         public bool CreateEvent(Event eventReq)
         {
             try 

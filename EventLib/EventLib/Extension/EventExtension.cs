@@ -32,5 +32,29 @@ namespace EventLib.Extension
             {Category.TechAndInnovation,"Tech and Innovation"},
             {Category.HealthAndWellness,"Health and Wellness"},
         };
+        public static Dictionary<int, Category> intToCategory = new Dictionary<int, Category>
+        {
+            {0,Category.None},
+            {1,Category.Charity},
+            {2, Category.Concerts},
+            {3, Category.Parties},
+            {4, Category.Sports},
+            {5, Category.Conferences},
+            {6, Category.Exhibitions},
+            {7, Category.Workshops},
+            {8, Category.Festivals},
+            {9, Category.Meetups},
+            {10, Category.Fundraisers},
+            {11, Category.Classes},
+            {12, Category.ComedyShows},
+            {13, Category.TheaterAndPlays},
+            {14, Category.MoviesAndScreenings},
+            {15, Category.Gaming},
+            {16, Category.FoodAndDrink},
+            {17, Category.ArtAndCulture},
+            {18, Category.OutdoorActivities},
+            {19, Category.TechAndInnovation},
+            {20, Category.HealthAndWellness},
+        };
     }
 }

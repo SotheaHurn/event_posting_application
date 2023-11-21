@@ -37,16 +37,17 @@ app.Run();
 
 void MapEndPoint(WebApplication app)
 {
-    app.MapPost("api/login", ([FromServices] EventRepo repo, string username, string password) => { return repo.Login(username, password); }).WithTags("User");
-    app.MapPost("api/sign_up", ([FromServices] EventRepo repo, string username,string password) => { return repo.SignUp(username,password); }).WithTags("User");
-    app.MapPost("api/create_event", ([FromServices] EventRepo repo, Event eventReq) => { return repo.CreateEvent(eventReq); }).WithTags("Event");
-    app.MapGet("api/event", ([FromServices] EventRepo repo) => { return repo.ReadEvent(); }).WithTags("Event");
-    app.MapGet("api/event_date", ([FromServices] EventRepo repo, DateTime dateTime) => { return repo.ReadEventByDate(dateTime); }).WithTags("Event");
-    app.MapGet("api/event_user_id", ([FromServices] EventRepo repo, int userId) => { return repo.ReadEventByUserId(userId); }).WithTags("Event");
-    app.MapGet("api/event_category", ([FromServices] EventRepo repo, Category category) => { return repo.ReadEventByCategory(category); }).WithTags("Event");
-    app.MapGet("api/event_name", ([FromServices] EventRepo repo,string eventName) => { return repo.ReadEventByName(eventName); }).WithTags("Event");
-    app.MapPost("api/update_event", ([FromServices] EventRepo repo, Event eventReq) => { return repo.UpdateEvent(eventReq); }).WithTags("Event");
-    app.MapPost("api/delete_event", ([FromServices] EventRepo repo, int eventId) => { return repo.DeleteEvent(eventId); }).WithTags("Event");
-    app.MapPost("api/event_like", ([FromServices] EventRepo repo, EventLikes eventLike) => { return repo.LikeEvent(eventLike); }).WithTags("Event Likes");
-    app.MapPost("api/event_comment", ([FromServices] EventRepo repo, EventComments eventComments) => { return repo.CreateEventComment(eventComments); }).WithTags("Event Comments");
+    app.MapPost("api/login", (EventRepo repo, string username, string password) => { return repo.Login(username, password); }).WithTags("User");
+    app.MapPost("api/sign_up", (EventRepo repo, string username,string password) => { return repo.SignUp(username,password); }).WithTags("User");
+    app.MapPut("api/update_profile", (EventRepo repo, User newUser) => { return repo.UpdateProfile(newUser); }).WithTags("User");
+    app.MapPut("api/create_event", (EventRepo repo, Event eventReq) => { return repo.CreateEvent(eventReq); }).WithTags("Event");
+    app.MapGet("api/event", (EventRepo repo) => { return repo.ReadEvent(); }).WithTags("Event");
+    app.MapGet("api/event_date", (EventRepo repo, DateTime dateTime) => { return repo.ReadEventByDate(dateTime); }).WithTags("Event");
+    app.MapGet("api/event_user_id", (EventRepo repo, int userId) => { return repo.ReadEventByUserId(userId); }).WithTags("Event");
+    app.MapGet("api/event_category", (EventRepo repo, Category category) => { return repo.ReadEventByCategory(category); }).WithTags("Event");
+    app.MapGet("api/event_name", (EventRepo repo,string eventName) => { return repo.ReadEventByName(eventName); }).WithTags("Event");
+    app.MapPut("api/update_event", (EventRepo repo, Event eventReq) => { return repo.UpdateEvent(eventReq); }).WithTags("Event");
+    app.MapDelete("api/delete_event", (EventRepo repo, int eventId) => { return repo.DeleteEvent(eventId); }).WithTags("Event");
+    app.MapPut("api/event_like", (EventRepo repo, EventLikes eventLike) => { return repo.LikeEvent(eventLike); }).WithTags("Event Likes");
+    app.MapPut("api/event_comment", (EventRepo repo, EventComments eventComments) => { return repo.CreateEventComment(eventComments); }).WithTags("Event Comments");
 }
