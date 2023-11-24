@@ -167,7 +167,7 @@ public class Program
                 });
                 if(response != null)
                 {
-                    CurrentUser= response;
+                    CurrentUser = response;
                     Console.WriteLine("\nSuccessed!!! Your profile Had been updated...");
                 }
                 else
