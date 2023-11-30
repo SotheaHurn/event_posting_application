@@ -18,7 +18,6 @@ C:\Users\ADMIN\Documents\Coding\C#\Event Posting Application\EventWindow\EventWi
 C:\Users\ADMIN\Documents\Coding\C#\Event Posting Application\EventWindow\EventWindow\bin\Debug\net6.0-windows\EventLib.dll
 C:\Users\ADMIN\Documents\Coding\C#\Event Posting Application\EventWindow\EventWindow\bin\Debug\net6.0-windows\EventLib.pdb
 C:\Users\ADMIN\Documents\Coding\C#\Event Posting Application\EventWindow\EventWindow\obj\Debug\net6.0-windows\EventWindow.csproj.AssemblyReference.cache
-C:\Users\ADMIN\Documents\Coding\C#\Event Posting Application\EventWindow\EventWindow\obj\Debug\net6.0-windows\EventWindow.Form1.resources
 C:\Users\ADMIN\Documents\Coding\C#\Event Posting Application\EventWindow\EventWindow\obj\Debug\net6.0-windows\EventWindow.Homepage.resources
 C:\Users\ADMIN\Documents\Coding\C#\Event Posting Application\EventWindow\EventWindow\obj\Debug\net6.0-windows\EventWindow.LoginSignUp.resources
 C:\Users\ADMIN\Documents\Coding\C#\Event Posting Application\EventWindow\EventWindow\obj\Debug\net6.0-windows\EventWindow.csproj.GenerateResource.cache
@@ -33,3 +32,4 @@ C:\Users\ADMIN\Documents\Coding\C#\Event Posting Application\EventWindow\EventWi
 C:\Users\ADMIN\Documents\Coding\C#\Event Posting Application\EventWindow\EventWindow\obj\Debug\net6.0-windows\EventWindow.genruntimeconfig.cache
 C:\Users\ADMIN\Documents\Coding\C#\Event Posting Application\EventWindow\EventWindow\obj\Debug\net6.0-windows\ref\EventWindow.dll
 C:\Users\ADMIN\Documents\Coding\C#\Event Posting Application\EventWindow\EventWindow\obj\Debug\net6.0-windows\EventWindow.Properties.Resources.resources
+C:\Users\ADMIN\Documents\Coding\C#\Event Posting Application\EventWindow\EventWindow\obj\Debug\net6.0-windows\EventWindow.HomepageEventCard.resources
