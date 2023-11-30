@@ -11,6 +11,9 @@ namespace EventWindow
             btLogin.Click += DoLogin;
             btSignUp.Click += DoSignUp;
             btShowPass.Click += DoShowHidePassword;
+            // Remove it
+            tbUsername.Text = "admin";
+            tbPassword.Text = "123456789";
         }
 
         private async void DoLogin(object? sender, EventArgs e)
@@ -22,7 +25,9 @@ namespace EventWindow
                 MessageBox.Show("Please input username and password");
             }
             string endpoint = $"/api/login?username={username}&password={password}";
+            Disable();
             User? response = await Program.RestClient.PostAsync<User?>(endpoint);
+            Enable();
             if (response != null)
             {
                 Program.CurrentUser = response;
@@ -44,7 +49,9 @@ namespace EventWindow
                 MessageBox.Show("Please input username and password");
             }
             string endpoint = $"/api/sign_up?username={username}&password={password}";
+            Disable();
             User? response = await Program.RestClient.PostAsync<User?>(endpoint);
+            Enable();
             if (response != null)
             {
                 Program.CurrentUser = response; MessageBox.Show(Program.CurrentUser.Name);
@@ -69,6 +76,20 @@ namespace EventWindow
                 tbPassword.PasswordChar = '*';
                 btShowPass.Text = "Show";
             }
+        }
+        void Enable()
+        {
+            btLogin.Enabled = true;
+            btSignUp.Enabled = true;
+            tbUsername.Enabled = true;
+            tbPassword.Enabled = true;
+        }
+        void Disable()
+        {
+            btLogin.Enabled = false;
+            btSignUp.Enabled = false;
+            tbUsername.Enabled = false;
+            tbPassword.Enabled = false;
         }
     }
 }

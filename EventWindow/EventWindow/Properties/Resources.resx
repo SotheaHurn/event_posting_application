@@ -121,4 +121,10 @@
   <data name="profile_holder" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\profile_holder.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="image_holder" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image_holder.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="like_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\like_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

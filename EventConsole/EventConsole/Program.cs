@@ -431,7 +431,7 @@ public class Program
                         Console.WriteLine("Comments : ");
                         foreach (EventComments eventComments in e.Comments)
                         {
-                            Console.WriteLine("\t" + "User : " + eventComments.Text);
+                            Console.WriteLine("\tUser " + eventComments.UserId + " : "+ eventComments.Text);
                         }
                         Console.WriteLine();
                     }
