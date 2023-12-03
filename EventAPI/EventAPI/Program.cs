@@ -9,7 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddDbContext<IDbContext, SqlDbContext>(optionBuilder => 
 {
-    optionBuilder.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+    optionBuilder.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnectionString"));
 });
 builder.Services.AddTransient<EventRepo>();
 

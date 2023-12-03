@@ -56,5 +56,42 @@ namespace EventLib.Extension
             {19, Category.TechAndInnovation},
             {20, Category.HealthAndWellness},
         };
+        public static Dictionary<Category, int> categoryToInt = new Dictionary<Category, int>
+        {
+            {Category.None, 0},
+            {Category.Charity,1},
+            {Category.Concerts,2},
+            {Category.Parties,3},
+            {Category.Sports,4},
+            {Category.Conferences,5},
+            {Category.Exhibitions,6},
+            {Category.Workshops,7},
+            {Category.Festivals,8},
+            {Category.Meetups,9},
+            {Category.Fundraisers,10},
+            {Category.Classes,11},
+            {Category.ComedyShows,12},
+            {Category.TheaterAndPlays,13},
+            {Category.MoviesAndScreenings,14},
+            {Category.Gaming,15},
+            {Category.FoodAndDrink,16},
+            {Category.ArtAndCulture,17},
+            {Category.OutdoorActivities,18},
+            {Category.TechAndInnovation,19},
+            {Category.HealthAndWellness,20},
+        };
+        public static string RadomImageName()
+        {
+            Random rd = new Random();
+            const string allowedChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz0123456789";
+            char[] chars = new char[10];
+
+            for (int i = 0; i < 10; i++)
+            {
+                chars[i] = allowedChars[rd.Next(0, allowedChars.Length)];
+            }
+
+            return new string(chars);
+        }
     }
 }

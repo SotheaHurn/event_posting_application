@@ -44,7 +44,7 @@ namespace EventWindow
             label3 = new Label();
             label4 = new Label();
             flpListEvent = new FlowLayoutPanel();
-            btYourEvents = new Label();
+            btMyEvents = new Label();
             ((System.ComponentModel.ISupportInitialize)pbProfile).BeginInit();
             SuspendLayout();
             // 
@@ -196,16 +196,16 @@ namespace EventWindow
             flpListEvent.Size = new Size(744, 467);
             flpListEvent.TabIndex = 15;
             // 
-            // btYourEvents
+            // btMyEvents
             // 
-            btYourEvents.AutoSize = true;
-            btYourEvents.Font = new Font("Kantumruy Pro Medium", 8F, FontStyle.Bold | FontStyle.Italic | FontStyle.Underline, GraphicsUnit.Point);
-            btYourEvents.ForeColor = Color.Red;
-            btYourEvents.Location = new Point(864, 58);
-            btYourEvents.Name = "btYourEvents";
-            btYourEvents.Size = new Size(76, 16);
-            btYourEvents.TabIndex = 16;
-            btYourEvents.Text = "Your Events";
+            btMyEvents.AutoSize = true;
+            btMyEvents.Font = new Font("Kantumruy Pro Medium", 8F, FontStyle.Bold | FontStyle.Italic | FontStyle.Underline, GraphicsUnit.Point);
+            btMyEvents.ForeColor = Color.Red;
+            btMyEvents.Location = new Point(864, 58);
+            btMyEvents.Name = "btMyEvents";
+            btMyEvents.Size = new Size(68, 16);
+            btMyEvents.TabIndex = 16;
+            btMyEvents.Text = "My Events";
             // 
             // Homepage
             // 
@@ -213,7 +213,7 @@ namespace EventWindow
             AutoScaleMode = AutoScaleMode.Font;
             AutoScroll = true;
             ClientSize = new Size(952, 558);
-            Controls.Add(btYourEvents);
+            Controls.Add(btMyEvents);
             Controls.Add(btRefresh);
             Controls.Add(dtpDate);
             Controls.Add(flpListEvent);
@@ -229,7 +229,8 @@ namespace EventWindow
             Controls.Add(label1);
             Controls.Add(label4);
             Name = "Homepage";
-            Text = "Homepage";
+            RightToLeftLayout = true;
+            Text = "Event Posting Application";
             ((System.ComponentModel.ISupportInitialize)pbProfile).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -251,6 +252,6 @@ namespace EventWindow
         private Label label3;
         private Label label4;
         private FlowLayoutPanel flpListEvent;
-        private Label btYourEvents;
+        private Label btMyEvents;
     }
 }

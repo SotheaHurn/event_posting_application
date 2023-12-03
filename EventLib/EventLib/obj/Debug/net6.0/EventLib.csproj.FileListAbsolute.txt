@@ -10,3 +10,4 @@ C:\Users\ADMIN\Documents\Coding\C#\Event Posting Application\EventLib\EventLib\o
 C:\Users\ADMIN\Documents\Coding\C#\Event Posting Application\EventLib\EventLib\obj\Debug\net6.0\EventLib.pdb
 C:\Users\ADMIN\Documents\Coding\C#\Event Posting Application\EventLib\EventLib\obj\Debug\net6.0\ref\EventLib.dll
 C:\Users\ADMIN\Documents\Coding\C#\Event Posting Application\EventLib\EventLib\obj\Debug\net6.0\EventLib.csproj.AssemblyReference.cache
+C:\Users\ADMIN\Documents\Coding\C#\Event Posting Application\EventLib\EventLib\obj\Debug\net6.0\EventLib.sourcelink.json

@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EventAPI.Migrations
 {
     [DbContext(typeof(SqlDbContext))]
-    [Migration("20231115170311_InitialMigration")]
-    partial class InitialMigration
+    [Migration("20231203160301_InitialStage")]
+    partial class InitialStage
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -88,24 +88,24 @@ namespace EventAPI.Migrations
                         {
                             EventId = 1,
                             CategoryNum = (byte)15,
-                            CreateOn = new DateTime(2023, 11, 16, 0, 3, 10, 993, DateTimeKind.Local).AddTicks(5684),
-                            EndDate = new DateTime(2023, 11, 17, 0, 3, 10, 993, DateTimeKind.Local).AddTicks(5678),
+                            CreateOn = new DateTime(2023, 12, 3, 23, 3, 1, 357, DateTimeKind.Local).AddTicks(101),
+                            EndDate = new DateTime(2023, 12, 4, 23, 3, 1, 357, DateTimeKind.Local).AddTicks(98),
                             EventName = "Sea Game 2023",
                             LikedCount = 0,
                             Location = "Location One",
-                            StartDate = new DateTime(2023, 11, 16, 0, 3, 10, 993, DateTimeKind.Local).AddTicks(5668),
+                            StartDate = new DateTime(2023, 12, 3, 23, 3, 1, 357, DateTimeKind.Local).AddTicks(90),
                             UserId = 1
                         },
                         new
                         {
                             EventId = 2,
                             CategoryNum = (byte)5,
-                            CreateOn = new DateTime(2023, 11, 16, 0, 3, 10, 993, DateTimeKind.Local).AddTicks(5688),
-                            EndDate = new DateTime(2023, 11, 18, 0, 3, 10, 993, DateTimeKind.Local).AddTicks(5687),
+                            CreateOn = new DateTime(2023, 12, 3, 23, 3, 1, 357, DateTimeKind.Local).AddTicks(108),
+                            EndDate = new DateTime(2023, 12, 5, 23, 3, 1, 357, DateTimeKind.Local).AddTicks(107),
                             EventName = "Code C",
                             LikedCount = 0,
                             Location = "Location Two",
-                            StartDate = new DateTime(2023, 11, 16, 0, 3, 10, 993, DateTimeKind.Local).AddTicks(5686),
+                            StartDate = new DateTime(2023, 12, 3, 23, 3, 1, 357, DateTimeKind.Local).AddTicks(106),
                             UserId = 2
                         });
                 });

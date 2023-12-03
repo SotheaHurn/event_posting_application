@@ -30,9 +30,10 @@ namespace EventWindow
             set
             {
                 _event = value;
-                pbLogo.ImageLocation = value.EventLogo == null || value.EventLogo == "" ? null : AppDomain.CurrentDomain.BaseDirectory + "../../../Resources/" + value.EventLogo;
+                pbLogo.ImageLocation = value.EventLogo == null || value.EventLogo == "" ? null : Program.AppDirectory + "EventImage/" + value.EventLogo;
                 lbTitle.Text = value.EventName;
                 lbDate.Text = value.StartDate.ToShortDateString() == value.EndDate.ToShortDateString() ? "Date : " + value.StartDate.ToString("dddd, dd MMMM yyyy") + " \nTime : " + value.StartDate.ToString("HH:mm tt") + " - " + value.EndDate.ToString("HH:mm tt") : "Start Date : " + value.StartDate.ToString("dddd, dd MMMM yyyy HH:mm tt") + "\n" + "End Date : " + value.EndDate.ToString("dddd, dd MMMM yyyy HH:mm tt");
+                lbLocation.Text = value.Location;
                 lbLikes.Text = value.LikedCount.ToString();
                 lbComments.Text = value.Comments.Count.ToString();
             }

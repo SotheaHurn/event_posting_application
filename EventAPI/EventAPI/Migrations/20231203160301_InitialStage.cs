@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace EventAPI.Migrations
 {
-    public partial class InitialMigration : Migration
+    public partial class InitialStage : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -89,8 +89,8 @@ namespace EventAPI.Migrations
                 columns: new[] { "EventId", "CategoryNum", "CreateOn", "EndDate", "EventLogo", "EventName", "LikedCount", "Location", "StartDate", "UpdateOn", "UserId" },
                 values: new object[,]
                 {
-                    { 1, (byte)15, new DateTime(2023, 11, 16, 0, 3, 10, 993, DateTimeKind.Local).AddTicks(5684), new DateTime(2023, 11, 17, 0, 3, 10, 993, DateTimeKind.Local).AddTicks(5678), null, "Sea Game 2023", 0, "Location One", new DateTime(2023, 11, 16, 0, 3, 10, 993, DateTimeKind.Local).AddTicks(5668), null, 1 },
-                    { 2, (byte)5, new DateTime(2023, 11, 16, 0, 3, 10, 993, DateTimeKind.Local).AddTicks(5688), new DateTime(2023, 11, 18, 0, 3, 10, 993, DateTimeKind.Local).AddTicks(5687), null, "Code C", 0, "Location Two", new DateTime(2023, 11, 16, 0, 3, 10, 993, DateTimeKind.Local).AddTicks(5686), null, 2 }
+                    { 1, (byte)15, new DateTime(2023, 12, 3, 23, 3, 1, 357, DateTimeKind.Local).AddTicks(101), new DateTime(2023, 12, 4, 23, 3, 1, 357, DateTimeKind.Local).AddTicks(98), null, "Sea Game 2023", 0, "Location One", new DateTime(2023, 12, 3, 23, 3, 1, 357, DateTimeKind.Local).AddTicks(90), null, 1 },
+                    { 2, (byte)5, new DateTime(2023, 12, 3, 23, 3, 1, 357, DateTimeKind.Local).AddTicks(108), new DateTime(2023, 12, 5, 23, 3, 1, 357, DateTimeKind.Local).AddTicks(107), null, "Code C", 0, "Location Two", new DateTime(2023, 12, 3, 23, 3, 1, 357, DateTimeKind.Local).AddTicks(106), null, 2 }
                 });
 
             migrationBuilder.InsertData(

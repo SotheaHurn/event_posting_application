@@ -54,13 +54,14 @@ C:\Users\ADMIN\Documents\Coding\C#\Event Posting Application\EventAPI\EventAPI\o
 C:\Users\ADMIN\Documents\Coding\C#\Event Posting Application\EventAPI\EventAPI\obj\Debug\net6.0\EventAPI.csproj.CoreCompileInputs.cache
 C:\Users\ADMIN\Documents\Coding\C#\Event Posting Application\EventAPI\EventAPI\obj\Debug\net6.0\EventAPI.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\ADMIN\Documents\Coding\C#\Event Posting Application\EventAPI\EventAPI\obj\Debug\net6.0\EventAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\ADMIN\Documents\Coding\C#\Event Posting Application\EventAPI\EventAPI\obj\Debug\net6.0\EventAPI.sourcelink.json
+C:\Users\ADMIN\Documents\Coding\C#\Event Posting Application\EventAPI\EventAPI\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\ADMIN\Documents\Coding\C#\Event Posting Application\EventAPI\EventAPI\obj\Debug\net6.0\staticwebassets.development.json
 C:\Users\ADMIN\Documents\Coding\C#\Event Posting Application\EventAPI\EventAPI\obj\Debug\net6.0\staticwebassets\msbuild.EventAPI.Microsoft.AspNetCore.StaticWebAssets.props
 C:\Users\ADMIN\Documents\Coding\C#\Event Posting Application\EventAPI\EventAPI\obj\Debug\net6.0\staticwebassets\msbuild.build.EventAPI.props
 C:\Users\ADMIN\Documents\Coding\C#\Event Posting Application\EventAPI\EventAPI\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.EventAPI.props
 C:\Users\ADMIN\Documents\Coding\C#\Event Posting Application\EventAPI\EventAPI\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.EventAPI.props
 C:\Users\ADMIN\Documents\Coding\C#\Event Posting Application\EventAPI\EventAPI\obj\Debug\net6.0\staticwebassets.pack.json
-C:\Users\ADMIN\Documents\Coding\C#\Event Posting Application\EventAPI\EventAPI\obj\Debug\net6.0\staticwebassets.build.json
-C:\Users\ADMIN\Documents\Coding\C#\Event Posting Application\EventAPI\EventAPI\obj\Debug\net6.0\staticwebassets.development.json
 C:\Users\ADMIN\Documents\Coding\C#\Event Posting Application\EventAPI\EventAPI\obj\Debug\net6.0\scopedcss\bundle\EventAPI.styles.css
 C:\Users\ADMIN\Documents\Coding\C#\Event Posting Application\EventAPI\EventAPI\obj\Debug\net6.0\EventAPI.csproj.CopyComplete
 C:\Users\ADMIN\Documents\Coding\C#\Event Posting Application\EventAPI\EventAPI\obj\Debug\net6.0\EventAPI.dll

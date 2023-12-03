@@ -33,3 +33,8 @@ C:\Users\ADMIN\Documents\Coding\C#\Event Posting Application\EventWindow\EventWi
 C:\Users\ADMIN\Documents\Coding\C#\Event Posting Application\EventWindow\EventWindow\obj\Debug\net6.0-windows\ref\EventWindow.dll
 C:\Users\ADMIN\Documents\Coding\C#\Event Posting Application\EventWindow\EventWindow\obj\Debug\net6.0-windows\EventWindow.Properties.Resources.resources
 C:\Users\ADMIN\Documents\Coding\C#\Event Posting Application\EventWindow\EventWindow\obj\Debug\net6.0-windows\EventWindow.HomepageEventCard.resources
+C:\Users\ADMIN\Documents\Coding\C#\Event Posting Application\EventWindow\EventWindow\obj\Debug\net6.0-windows\EventWindow.MyAccount.resources
+C:\Users\ADMIN\Documents\Coding\C#\Event Posting Application\EventWindow\EventWindow\obj\Debug\net6.0-windows\EventWindow.MyEventCard.resources
+C:\Users\ADMIN\Documents\Coding\C#\Event Posting Application\EventWindow\EventWindow\obj\Debug\net6.0-windows\EventWindow.MyEvents.resources
+C:\Users\ADMIN\Documents\Coding\C#\Event Posting Application\EventWindow\EventWindow\obj\Debug\net6.0-windows\EventWindow.CreateUpdateEvent.resources
+C:\Users\ADMIN\Documents\Coding\C#\Event Posting Application\EventWindow\EventWindow\obj\Debug\net6.0-windows\EventWindow.sourcelink.json

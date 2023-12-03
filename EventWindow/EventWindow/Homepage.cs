@@ -2,7 +2,6 @@
 
 using EventLib;
 using EventLib.Extension;
-using EventWindow.Properties;
 
 namespace EventWindow
 {
@@ -16,7 +15,7 @@ namespace EventWindow
         {
             InitializeComponent();
 
-            pbProfile.ImageLocation = Program.CurrentUser?.ProfilePicture ?? AppDomain.CurrentDomain.BaseDirectory + "../../../Resources/profile_holder.png";
+            pbProfile.ImageLocation = Program.CurrentUser?.ProfilePicture == null || Program.CurrentUser?.ProfilePicture == "" ? null : Program.AppDirectory + "ProfileImage/" + Program.CurrentUser?.ProfilePicture;
             lbName.Text = Program.CurrentUser?.Name ?? "Unknown";
             lbPhone.Text = Program.CurrentUser?.PhoneNumber ?? "-";
 
@@ -25,6 +24,8 @@ namespace EventWindow
             cbCategory.SelectedValueChanged += OnCategoryChanged;
             btClear.Click += OnClear;
             btRefresh.Click += OnRefresh;
+            btViewAccount.Click += OnViewAccount;
+            btMyEvents.Click += OnViewMyEvent;
 
             GetEvent();
         }
@@ -34,17 +35,19 @@ namespace EventWindow
             if (searchUsername != null)
             {
                 endPoint = $"/api/event_name?eventName={searchUsername}";
-            }else if(dateTime != null)
+            }
+            else if (dateTime != null)
             {
                 endPoint = $"/api/event_date?dateTime={dateTime.ToString()}";
-            }else if (category != Category.None)
+            }
+            else if (category != Category.None)
             {
                 endPoint = $"/api/event_category?category={category}";
             }
             else
             {
                 endPoint = $"/api/event";
-                
+
             }
             events = await Program.RestClient.GetAsync<List<Event>>(endPoint) ?? new List<Event>();
             flpListEvent.Controls.Clear();
@@ -115,6 +118,18 @@ namespace EventWindow
         private void OnRefresh(object sender, EventArgs e)
         {
             GetEvent();
+        }
+        private void OnViewAccount(object sender, EventArgs e)
+        {
+            MyAccount myAccount = new MyAccount();
+            myAccount.Show();
+            this.Hide();
+        }
+        private void OnViewMyEvent(object sender, EventArgs e)
+        {
+            MyEvents myEvents = new MyEvents();
+            myEvents.Show();
+            this.Hide();
         }
     }
 }
